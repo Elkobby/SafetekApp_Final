@@ -1,0 +1,106 @@
+page-userpage {
+    
+
+   .container {
+       display: flex; 
+       flex-direction: column;
+       text-align: center; 
+       
+   }
+
+   ion-grid{
+       padding:0; 
+       height:100%;  
+   }
+
+   .header {
+         background:#EF5858;   
+         
+   }
+
+
+   .pageHeader{
+       flex:2;
+       position: relative;
+       text-align: center;
+       margin-top: -20px;
+       padding-bottom: 20px;
+    
+       
+   }
+
+   .header  ion-col > h1 {
+       margin-top:0;
+       color:$general-color;
+       font-weight: 300;
+       font-style: italic;
+   }
+
+   .body{
+       flex:3;
+       background:$bg-color;
+       overflow: hidden;
+   }
+
+   .body p {
+       font-weight: 300;
+   }
+
+.profileImg {
+    width: 100px; 
+    border-radius: 50px;
+}
+
+ion-searchbar {
+    position:absolute; 
+    top: 85%;
+    left: 7.5%;
+    z-index:1;
+    width:85%;
+}
+
+ion-list:first-child{
+    padding-top: 30px;
+}
+
+//this makes the ion-icons in the header smaller, I don't know why. 
+
+.body .button{
+    background: $bg-color;
+    color: $general-color;
+    font-size: 2em;
+    padding-left:0;
+}
+
+.button  p {
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.headerButton {
+    background: none;
+    box-shadow: none;
+    color: $bg-color;
+    text-align: left;
+    font-size: 2em;
+}
+
+.uploadIcon{
+    position:absolute;
+    left:56%;
+    top:35%;
+    background: $bg-color;
+    // border: 2px solid $bg-color;
+    width:30px;
+    height: 30px;
+    padding-top:5.3px;
+    border-radius:15px;
+    color: $general-color;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: middle;
+    
+}
+
+}
