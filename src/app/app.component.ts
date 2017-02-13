@@ -7,6 +7,9 @@ import {LoginPage} from '../pages/login/login';
 import {SignupPage} from '../pages/signup/signup'; 
 import {UserpagePage} from '../pages/userpage/userpage';
 import {MeetpointsPage} from '../pages/meetpoints/meetpoints'; 
+import {HostelActivePage} from '../pages/hostel-active/hostel-active'; 
+import { HostelInactivePage} from '../pages/hostel-inactive/hostel-inactive'; 
+
 import * as firebase from 'firebase'; 
 
 
@@ -16,7 +19,7 @@ import * as firebase from 'firebase';
 export class MyApp {
   @ViewChild(Nav) nav : Nav; 
 
-  rootPage: any = UserpagePage;
+  rootPage: any = HostelInactivePage;
   activePage : any; 
 
   pages: Array<{title: string, component:any}>

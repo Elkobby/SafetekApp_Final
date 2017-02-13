@@ -1,0 +1,30 @@
+page-hostel-active {
+    .goingButton {
+        width: 150px; 
+        height: 150px; 
+        border-radius: 75px;
+        font-size:15px;
+    }
+
+    .movingInfo{
+        font-size: 30px;
+        color: $general-color; 
+        font-weight: 300;
+    }
+    .movingInfo span {
+        color: #EF5858; 
+        font-weight: bold;
+    }
+
+    ion-grid{
+        margin-top: 20%;
+    }
+
+    ion-navbar{
+        font-weight:300; 
+        font-style: italic; 
+        font-size: 30px;
+    }
+
+
+}

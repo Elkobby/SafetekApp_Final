@@ -5,7 +5,10 @@ import { HomePage } from '../pages/home/home';
 import {LoginPage} from '../pages/login/login';
 import {SignupPage} from '../pages/signup/signup';
 import {UserpagePage} from '../pages/userpage/userpage';
-import {MeetpointsPage} from '../pages/meetpoints/meetpoints'; 
+import {MeetpointsPage} from '../pages/meetpoints/meetpoints';
+import {HostelActivePage} from '../pages/hostel-active/hostel-active';  
+import { HostelInactivePage} from '../pages/hostel-inactive/hostel-inactive'; 
+
 
 
 @NgModule({
@@ -15,7 +18,9 @@ import {MeetpointsPage} from '../pages/meetpoints/meetpoints';
     LoginPage,  
     SignupPage, 
     UserpagePage, 
-    MeetpointsPage
+    MeetpointsPage, 
+    HostelActivePage,
+    HostelInactivePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +32,9 @@ import {MeetpointsPage} from '../pages/meetpoints/meetpoints';
     LoginPage,
     SignupPage, 
     UserpagePage, 
-    MeetpointsPage
+    MeetpointsPage, 
+    HostelActivePage,
+    HostelInactivePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
