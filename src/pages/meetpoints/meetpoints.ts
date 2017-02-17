@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {HostelInactivePage} from '../hostel-inactive/hostel-inactive';
+import {HostelActivePage} from '../hostel-active/hostel-active';
 
 /*
   Generated class for the Meetpoints page.
@@ -17,6 +19,13 @@ export class MeetpointsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MeetpointsPage');
+  }
+ pushPage() {
+    this.navCtrl.push(HostelInactivePage);
+  }
+
+   pushPage2() {
+    this.navCtrl.push(HostelActivePage);
   }
 
 }

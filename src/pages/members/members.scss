@@ -1,0 +1,17 @@
+page-members {
+    .member {
+        background: $bg-color; 
+        color: $general-color;
+        font-size: 30px;
+        font-weight: 300; 
+    }
+
+    ion-title{
+        font-weight:300;
+        font-style: italic;
+    }
+
+    ion-title p {
+        padding-right: 60px;
+    }
+}

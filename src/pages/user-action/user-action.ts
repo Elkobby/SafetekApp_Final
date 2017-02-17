@@ -1,27 +1,26 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {UserpagePage} from '../userpage/userpage';
+import {MembersPage} from '../members/members'; 
 
 /*
-  Generated class for the Login page.
+  Generated class for the UserAction page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html'
+  selector: 'page-user-action',
+  templateUrl: 'user-action.html'
 })
-export class LoginPage {
+export class UserActionPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad UserActionPage');
   }
 
-  pushPage(){
-    this.navCtrl.setRoot(UserpagePage);
-  }
-
+pushPage() {
+  this.navCtrl.push(MembersPage); 
+}
 }

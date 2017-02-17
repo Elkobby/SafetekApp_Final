@@ -1,0 +1,32 @@
+page-user-action {
+    .container{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-around;
+    }
+
+    .viewMembers, .chat, .exitGroup{
+        display: flex;
+        flex:1;
+        padding: 20px;
+    }
+    .viewMembers > button,  .chat > button,  .exitGroup > button{
+      
+        width: 300px;
+        height: 90px;
+        font-size: 25px;
+    }
+
+ion-title p {
+    padding-right: 60px; 
+
+    .headerButton {
+    background: none;
+    box-shadow: none;
+    color: $bg-color;
+    text-align: left;
+    font-size: 2em;
+}
+}
+}

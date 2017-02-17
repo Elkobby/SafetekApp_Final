@@ -7,8 +7,9 @@
 <ion-header>
 
   <ion-navbar text-center>
-    <ion-title>
-      <ion-icon name="home"></ion-icon> Hostel Name</ion-title>
+    <ion-title class=".pageTitle">
+     <p><ion-icon name="home"></ion-icon> Hostel Name</p>
+     </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -24,8 +25,8 @@
 
     <ion-row text-center>
       <ion-col>
-       <button  ion-button class="goingButton">
-         Join Them!
+       <button (click)="presentModal()" ion-button class="goingButton">
+        Create Group
        </button> 
        </ion-col>
     

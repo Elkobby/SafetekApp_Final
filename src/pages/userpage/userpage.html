@@ -8,7 +8,6 @@
     <button ion-button class="headerButton"  menuToggle no-padding padding-left>
           <ion-icon name="menu"> </ion-icon>
     </button>
-
     <ion-grid>  
     <ion-row  class="pageHeader">
       <ion-col>
@@ -31,11 +30,11 @@
   <ion-grid>
     
 
-    <ion-row class="body">
+    <ion-row class="body" scorll="true">
       <ion-col>
        <ion-list>
           <button class="button" ion-item (click)="pushPage()"><p>Adombi Hostel</p></button>
-          <button class="button" ion-item><p>Amanda</p></button>
+          <button class="button" ion-item (click)="pushPage()"><p>Amanda</p></button>
           <button class="button" ion-item><p>All Is Well Hostel</p></button>
           <button class="button" ion-item><p>One</p></button>
           <button class="button" ion-item><p>One</p></button>

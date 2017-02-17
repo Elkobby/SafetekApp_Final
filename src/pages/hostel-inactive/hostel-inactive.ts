@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
+import {ModalPage} from '../modal/modal'; 
 
 /*
   Generated class for the HostelInactive page.
@@ -13,10 +14,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class HostelInactivePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public viewCtrl: ViewController) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HostelInactivePage');
   }
-
+presentModal() {
+    let modal = this.modalCtrl.create(ModalPage);
+    modal.present();
+  }
+  
+   dismiss() {
+    this.viewCtrl.dismiss();}
 }
