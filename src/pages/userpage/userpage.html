@@ -1,6 +1,5 @@
 <!--
   Generated template for the Userpage page.
-
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
@@ -20,7 +19,7 @@
     </ion-row>
   
         <ion-searchbar >
-          <ion-input  type="search"></ion-input>
+          <ion-input  type="search" ></ion-input>
         </ion-searchbar>
     </ion-grid>
   
@@ -30,17 +29,12 @@
   <ion-grid>
     
 
-    <ion-row class="body" scorll="true">
+    <ion-row class="body">
       <ion-col>
        <ion-list>
-          <button class="button" ion-item (click)="pushPage()"><p>Adombi Hostel</p></button>
-          <button class="button" ion-item (click)="pushPage()"><p>Amanda</p></button>
-          <button class="button" ion-item><p>All Is Well Hostel</p></button>
-          <button class="button" ion-item><p>One</p></button>
-          <button class="button" ion-item><p>One</p></button>
-          <button class="button" ion-item><p>One</p></button>
-          <button class="button" ion-item><p>One</p></button>
-          <button class="button" ion-item><p>One</p></button>
+          <!--<button class="button" ion-item (click)="pushPage()"><p>Adombi Hostel</p></button>-->
+          <button *ngFor=" let hostel of hostels" class="button" ion-item (click)="pushPage()"><p>{{hostel.id}}</p></button>
+         
        </ion-list>
       </ion-col>
     </ion-row>

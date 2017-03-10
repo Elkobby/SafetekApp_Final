@@ -12,8 +12,11 @@ import { HostelInactivePage} from '../pages/hostel-inactive/hostel-inactive';
 import {ModalPage} from '../pages/modal/modal'; 
 import {UserActionPage} from '../pages/user-action/user-action'; 
 import {MembersPage} from '../pages/members/members'; 
+import {ChatPage} from '../pages/chat/chat'; 
+// import {HostelService} from '../providers/hostel-service';
  
-import * as firebase from 'firebase'; 
+
+import 'rxjs/add/operator/map'; 
 
 
 @Component({
@@ -22,7 +25,7 @@ import * as firebase from 'firebase';
 export class MyApp {
   @ViewChild(Nav) nav : Nav; 
 
-  rootPage: any = SignupPage;
+  rootPage: any = UserpagePage;
   activePage : any; 
 
   pages: Array<{title: string, component:any}>

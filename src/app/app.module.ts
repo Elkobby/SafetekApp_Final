@@ -1,5 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { HttpModule, JsonpModule } from '@angular/http';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {LoginPage} from '../pages/login/login';
@@ -11,7 +13,9 @@ import { HostelInactivePage} from '../pages/hostel-inactive/hostel-inactive';
 import {ModalPage} from '../pages/modal/modal'; 
 import {UserActionPage} from '../pages/user-action/user-action'; 
 import {MembersPage} from '../pages/members/members'; 
-
+import {ChatPage} from '../pages/chat/chat'; 
+import {HostelService} from '../providers/hostel-service'; 
+import {HostelSearch} from '../providers/hostel-search'; 
 
 
 
@@ -27,10 +31,15 @@ import {MembersPage} from '../pages/members/members';
     HostelInactivePage, 
     ModalPage, 
     UserActionPage, 
-    MembersPage
+    MembersPage, 
+    ChatPage, 
+    
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp), 
+    HttpModule, 
+    JsonpModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,8 +53,10 @@ import {MembersPage} from '../pages/members/members';
     HostelInactivePage, 
     ModalPage, 
     UserActionPage, 
-    MembersPage
+    MembersPage,
+    ChatPage, 
+   
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, HostelSearch]
 })
 export class AppModule {}

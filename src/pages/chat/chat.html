@@ -7,12 +7,49 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>chat</ion-title>
+    <ion-title text-center>
+      <p><ion-icon name="chatboxes"></ion-icon> CHAT</p>
+       </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-row class="recepient">
+    <ion-col class="recepientMessage">
+      <img src="../../assets/img/square.jpg" alt="">
+      <div class="chatBubble">
+        <p padding-left>some really cool chat </p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="recepient">
+    <ion-col class="recepientMessage">
+      <img src="../../assets/img/square.jpg" alt="">
+      <div class="chatBubble">
+        <p padding-left>some really cool chat </p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+   <ion-row class="sender">
+    <ion-col class="senderMessage">
+      <img src="../../assets/img/square.jpg" alt="">
+      <div class="chatBubble">
+        <p padding-left>some really cool chat </p>
+      </div>
+    </ion-col>
+  </ion-row>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+   <div class="sendBox">
+     <ion-input type="text" placeholder="text-goes here"> </ion-input>
+    <ion-icon text-center class="sendButton" name="send"></ion-icon>
+   </div>
+  </ion-toolbar>
+</ion-footer>
