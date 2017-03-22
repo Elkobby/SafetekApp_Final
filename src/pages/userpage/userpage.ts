@@ -23,24 +23,24 @@ export class UserpagePage {
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public hostelSearch: HostelSearch)  {
-  this.loadHostels();
+  // this.loadHostels();
   
   }
 
   ionViewDidLoad() {
     
     // console.log('ionViewDidLoad UserpagePage');
-   this.hostelSearch.getHostels();
+  //  this.hostelSearch.getHostels();
   //  this.setSearchedHostels(); 
  
 }
   // Function for displaying hostels
-  loadHostels(){
-    this.hostelSearch.getHostels()
-    .then(data =>{
-      this.hostels = data; 
-    }); 
-  }
+  // loadHostels(){
+  //   this.hostelSearch.getHostels()
+  //   .then(data =>{
+  //     this.hostels = data; 
+  //   }); 
+  // }
 
   //Functions for naviagting between pages
   pushPage() {

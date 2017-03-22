@@ -25,7 +25,7 @@ import 'rxjs/add/operator/map';
 export class MyApp {
   @ViewChild(Nav) nav : Nav; 
 
-  rootPage: any = UserActionPage;
+  rootPage: any = LoginPage;
   activePage : any; 
 
   pages: Array<{title: string, component:any, icon:any}>
@@ -59,5 +59,6 @@ export class MyApp {
   checkActive(page){
     return page==this.activePage; 
   }
+
 
 }

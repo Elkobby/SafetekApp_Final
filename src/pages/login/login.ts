@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {UserpagePage} from '../userpage/userpage';
+import {SignupPage} from '../signup/signup'; 
 
 /*
   Generated class for the Login page.
@@ -22,6 +23,10 @@ export class LoginPage {
 
   pushPage(){
     this.navCtrl.setRoot(UserpagePage);
+  }
+
+   pushPageSignUp() {
+    this.navCtrl.setRoot(SignupPage);
   }
 
 }
