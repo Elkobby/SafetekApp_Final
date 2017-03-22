@@ -24,6 +24,7 @@ export class UserpagePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public hostelSearch: HostelSearch)  {
   this.loadHostels();
+  
   }
 
   ionViewDidLoad() {

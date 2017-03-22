@@ -8,11 +8,15 @@
         </ion-toolbar>
     </ion-header>    
 
-    <ion-content>
+    <ion-content no-padding>
         <ion-list class="menuListItem">
-            <button menuClose ion-item *ngFor="let p of pages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" >
-                {{p.title}}
-            </button>
+            <!--<button menuClose ion-item *ngFor="let p of pages" [class.activeHighlight]="checkActive(p)"  (click)="openPage(p)" >-->
+              <ion-item  menuClose ion-item *ngFor="let p of pages" [class.activeHighlight]="checkActive(p)"  (click)="openPage(p)">
+                  <p>
+                <ion-icon item-left [name]="p.icon"></ion-icon>
+                {{p.title}} </p>
+              </ion-item>
+            <!--</button>-->
         </ion-list>
     </ion-content>
 </ion-menu>

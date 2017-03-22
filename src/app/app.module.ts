@@ -16,6 +16,8 @@ import {MembersPage} from '../pages/members/members';
 import {ChatPage} from '../pages/chat/chat'; 
 import {HostelService} from '../providers/hostel-service'; 
 import {HostelSearch} from '../providers/hostel-search'; 
+import {EmergencyPage} from '../pages/emergency/emergency'
+
 
 
 
@@ -33,7 +35,7 @@ import {HostelSearch} from '../providers/hostel-search';
     UserActionPage, 
     MembersPage, 
     ChatPage, 
-    
+    EmergencyPage
   ],
   imports: [
     IonicModule.forRoot(MyApp), 
@@ -55,6 +57,7 @@ import {HostelSearch} from '../providers/hostel-search';
     UserActionPage, 
     MembersPage,
     ChatPage, 
+    EmergencyPage
    
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, HostelSearch]

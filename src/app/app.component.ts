@@ -25,17 +25,17 @@ import 'rxjs/add/operator/map';
 export class MyApp {
   @ViewChild(Nav) nav : Nav; 
 
-  rootPage: any = UserpagePage;
+  rootPage: any = UserActionPage;
   activePage : any; 
 
-  pages: Array<{title: string, component:any}>
+  pages: Array<{title: string, component:any, icon:any}>
 
   constructor(public platform: Platform){
     this.initializeApp(); 
 
   this.pages = [
-    {title: 'Home', component:UserpagePage},
-     {title: 'login', component:LoginPage},
+    {title: 'Home', component:UserpagePage, icon:'md-home'},
+     {title: 'Logout', component:LoginPage, icon:'person'},
   ];
 
   this.activePage = this.pages[0]; 

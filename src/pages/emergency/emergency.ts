@@ -1,25 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {UserActionPage} from '../user-action/user-action'; 
 
 /*
-  Generated class for the HostelActive page.
+  Generated class for the Emergency page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-hostel-active',
-  templateUrl: 'hostel-active.html'
+  selector: 'page-emergency',
+  templateUrl: 'emergency.html'
 })
-export class HostelActivePage {
+export class EmergencyPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HostelActivePage');
+    console.log('ionViewDidLoad EmergencyPage');
   }
-  pushPage(){
-    this.navCtrl.setRoot(UserActionPage);
-  }
+
 }

@@ -1,0 +1,27 @@
+page-emergency {
+    .container{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+    .emergencyButton {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 100px; 
+        background: #2B59C3;
+        margin: auto;
+        display: flex; 
+        
+    }
+
+    .emergencyButton p {
+        margin: auto;
+        vertical-align: center; 
+        font-size: 25px; 
+        color: white;
+    }
+
+    ion-title p {
+    padding-left: 60px;}
+}

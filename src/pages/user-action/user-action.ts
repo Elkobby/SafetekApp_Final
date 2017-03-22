@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {MembersPage} from '../members/members'; 
 import {ChatPage} from '../chat/chat'; 
 import {UserpagePage} from '../userpage/userpage'; 
+import {EmergencyPage} from '../emergency/emergency'; 
 
 /*
   Generated class for the UserAction page.
@@ -32,5 +33,9 @@ pushPageChat(){
 
 pushPageExit(){
   this.navCtrl.setRoot(UserpagePage);
+}
+
+pushPageE(){
+  this.navCtrl.push(EmergencyPage);
 }
 }
