@@ -1,2 +1,2 @@
 # Safely
-Safetek App with UI written in Ionic 2
+Safelyp with UI written in Ionic 2
