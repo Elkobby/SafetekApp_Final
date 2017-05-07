@@ -16,7 +16,7 @@
   <ion-row>
     <ion-col>
       <ion-item>
-        <ion-input class="radius" type="text" placeholder="Reference No."></ion-input>
+        <ion-input class="radius" type="text" name="reference" [(ngModel)]="data.reference" placeholder="Reference No."></ion-input>
      </ion-item>
     </ion-col>
   </ion-row>
@@ -24,7 +24,7 @@
    <ion-row>
     <ion-col>
       <ion-item>
-        <ion-input type="text" placeholder="Index No."></ion-input>
+        <ion-input type="text" name="index" [(ngModel)]="data.index" placeholder="Index No."></ion-input>
      </ion-item>
     </ion-col>
   </ion-row>
@@ -32,7 +32,7 @@
    <ion-row>
     <ion-col>
       <ion-item>
-        <ion-input type="text" placeholder="Password"></ion-input>
+        <ion-input type="password" name="password" [(ngModel)]="data.password" placeholder="Password"></ion-input>
      </ion-item>
     </ion-col>
   </ion-row>
@@ -43,13 +43,13 @@
 
  <ion-row>
     <ion-col>
-      <button ion-button primary full round large (click)="pushPage()">LOG IN</button>
+      <button ion-button primary full round large (click)="login()">LOG IN</button>
     </ion-col>
  </ion-row>
 
  <ion-row center>
    <ion-col>
-     <p>Don't have an account? <a href="#">Sign Up</a>!</p>
+     <p>Don't have an account? <a (click)="pushPage()">Sign Up</a>!</p>
    </ion-col>
  </ion-row>
 </ion-grid>
