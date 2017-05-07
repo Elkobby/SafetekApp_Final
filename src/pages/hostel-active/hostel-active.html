@@ -8,7 +8,7 @@
 
   <ion-navbar text-center>
     <ion-title>
-      <p><ion-icon name="home"></ion-icon> Hostel Name</p></ion-title>
+      <p><ion-icon name="home"></ion-icon> {{this.data.hname}} Hostel</p></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,16 +18,16 @@
   <ion-grid >
     <ion-row text-center>
       <ion-col class="movingInfo">
-        <span>50 people</span> are headed to [hosetl name]
+        <span>{{this.data.mcount}} people</span> are headed to {{this.data.hname}}
       </ion-col>
     </ion-row>
 
     <ion-row text-center>
       <ion-col>
-       <button  ion-button (click) = "pushPage()"class="goingButton">
-         Join Them!
-       </button> 
-       </ion-col>
+        <button  ion-button (click) = "joinGroup()"class="goingButton">
+          Join Them!
+        </button>
+      </ion-col>
     
     </ion-row>
   </ion-grid>
