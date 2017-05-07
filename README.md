@@ -1,2 +1,2 @@
-# SafetekApp_Final
-Safetek App with UI written in Ioni
+# Safely
+Safetek App with UI written in Ionic 2
