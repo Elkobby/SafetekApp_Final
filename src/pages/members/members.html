@@ -15,10 +15,10 @@
 
 <ion-content no-padding>
   <ion-list>
-  <ion-item class="member" *ngFor="let item of Person">
+  <ion-item class="member" *ngFor="let item of items">
     <ion-avatar item-left>
-      <img src="{{item.image}}" alt="">  
-    </ion-avatar>{{item.name}}
+      <img src="{{item.avatar}}" alt="">  
+    </ion-avatar>{{item.fullname}}
   </ion-item>
   </ion-list>
 </ion-content>
