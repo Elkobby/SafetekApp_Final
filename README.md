@@ -1,2 +1,2 @@
 # Safely
-Safelyp with UI written in Ionic 2
+Safely with UI written in Ionic 2
