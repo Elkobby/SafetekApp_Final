@@ -1,5 +1,6 @@
 <!--
   Generated template for the Userpage page.
+
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
@@ -11,16 +12,19 @@
     <ion-row  class="pageHeader">
       <ion-col>
         <img class="profileImg" src="../../assets/img/square.jpg" alt="UserProfile-picture" >
-        <h1 padding-bottom >Hi, Student!</h1>
+        <h1 padding-bottom >Hi, {{firstname}}!</h1>
       </ion-col>
       <!--<ion-col class="uploadIcon">-->
         <a href=""><ion-icon class="uploadIcon" name="camera"></ion-icon></a>
       <!--</ion-col>-->
     </ion-row>
-  
-        <ion-searchbar >
-          <ion-input  type="search" ></ion-input>
-        </ion-searchbar>
+
+        <ion-searchbar
+                [(ngModel)]="myInput"
+                [showCancelButton]="shouldShowCancel"
+                (ionInput)="getItems($event)"
+                (ionCancel)="onCancel($event)">
+            </ion-searchbar>
     </ion-grid>
   
 
@@ -29,12 +33,12 @@
   <ion-grid>
     
 
-    <ion-row class="body">
+    <ion-row class="body" scorll="true">
       <ion-col>
        <ion-list>
-          <!--<button class="button" ion-item (click)="pushPage()"><p>Adombi Hostel</p></button>-->
-          <button *ngFor=" let hostel of hostels" class="button" ion-item (click)="pushPage()"><p>{{hostel.name}}</p></button>
-         
+           <!--<ion-item >-->
+               <button *ngFor="let item of items" class="button" ion-item (click)="viewEntry({ record: item })"><p>{{item.name}}</p></button>
+           <!--</ion-item>-->
        </ion-list>
       </ion-col>
     </ion-row>

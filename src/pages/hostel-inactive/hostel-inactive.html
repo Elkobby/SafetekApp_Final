@@ -8,7 +8,7 @@
 
   <ion-navbar text-center>
     <ion-title class=".pageTitle">
-     <p><ion-icon name="home"></ion-icon> Hostel Name</p>
+     <p><ion-icon name="home"></ion-icon> {{this.data.hname}} Hostel</p>
      </ion-title>
   </ion-navbar>
 
@@ -19,7 +19,7 @@
   <ion-grid >
     <ion-row text-center>
       <ion-col class="movingInfo">
-        <span>Nobody</span> is headed to [hosetl name]
+        <span>Nobody</span> is headed to {{this.data.hname}}
       </ion-col>
     </ion-row>
 

@@ -17,17 +17,8 @@
 
 <ion-content >
     <ion-list>
-        <button ion-item class="button" no-padding (click)="pushPage()">
-          <p><ion-icon name="ios-navigate-outline" ></ion-icon> Engineering Gate</p>
-        </button>
-        <button ion-item class="button" no-padding (click)="pushPage2()">
-            <p><ion-icon name="ios-navigate-outline"></ion-icon> Engineering Gate</p>
-        </button>
-        <button ion-item class="button" no-padding >
-           <p><ion-icon name="ios-navigate-outline"></ion-icon> Engineering Gate</p>
-        </button>
-        <button ion-item class="button" no-padding>
-            <p><ion-icon name="ios-navigate-outline"></ion-icon> Engineering Gate</p>
-        </button>
+        <!--<ion-item >-->
+            <button *ngFor="let item of items" class="button" ion-item (click)="isGroup({ record: item })"><p>{{item.location}}</p></button>
+        <!--</ion-item>-->
     </ion-list>
 </ion-content>

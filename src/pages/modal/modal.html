@@ -11,8 +11,8 @@
   
   <ion-content padding>
     <div class="modalComponent">
-      <ion-input  type="text" placeholder="enter group name"></ion-input>
-      <button ion-button round (click)="pushPage()">Name Group</button>
+      <ion-input  type="text" name="gname" [(ngModel)]="data.gname" placeholder="enter group name"></ion-input>
+      <button ion-button round (click)="createGroup()">Name Group</button>
     </div>
   </ion-content>
 </div>
